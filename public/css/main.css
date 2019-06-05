@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+h3{
+    font-size: 30px !important;
+}
+
 html{
     font: normal 16px sans-serif;
     color: #555;
@@ -192,6 +196,7 @@ hr{
     margin: 50px 0;
     width: 100%;
     text-align: center;
+    background-color: #e2e7ff;
 }
 
 .myPackages h3{
@@ -221,4 +226,127 @@ hr{
 .myPackages h4{
     padding: 10px 0;
     font-size: 20px;
+}
+
+/* Testimonials */
+.testimonials{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.testimonialHolder{
+    margin-top: 20px;
+}
+
+.oneTestimonial{
+    margin: 25px auto;
+}
+
+.testimonials h3{
+    margin-bottom: 20px;
+}
+
+.name{
+    margin-top: 5px;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    margin: 50px 0 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #e2e7ff; 
+}
+
+.footer h3{
+    margin: 20px 0;
+}
+
+.footer form{
+    margin: 20px auto;
+    width: 45%;
+}
+
+.footer .details{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer input[type="text"], .footer textarea{
+    font-family: "Open sans", sans-serif;
+    height: 40px;
+    padding-left: 10px;
+    flex-basis: 45%;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+} 
+
+.footer textarea{
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.footer input[type="text"]:focus, .footer textarea:focus{
+    outline: none;
+    border: 1px solid #063e99;
+}
+
+.footer button{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: #0d61e8;
+    transition: background-color 0.3s;
+}
+
+.footer button:hover{
+    background-color: #063e99;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@media(max-width: 800px){
+    .headerContent nav,
+    .headerContent h2{
+        display: none;
+    }
+    .myDestinations p{
+        padding: 0 20px 20px;
+    }
+    .myDestinations .mountainImages .large, 
+    .myDestinations .mountainImages .small{
+        flex-basis: 50%;
+    }
+    .oneTestimonial{
+        margin: 25px;
+    }
+    .footer form{
+        width: 70%;
+    }
+    .footer .details{
+        flex-wrap: wrap;
+    }
+    .footer input[type="text"], .footer textarea{
+        flex-basis: 100%;
+    }
+    .footer .topInput{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 450px){
+    .introText h3{
+        font-size: 25px !important;
+    }
+    .myDestinations .mountainImages .large, 
+    .myDestinations .mountainImages .small,
+    .myPackages li {
+        flex-basis: 100%;
+    }
 }
